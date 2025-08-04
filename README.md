@@ -2,11 +2,11 @@
   <h1>Windows , MacOS and Linux</h1>
 <details class="Windows">
     <summary>Windows setup and customization</summary>
-    <ul>
-        <li>Option 1</li>
+    <ol>
+        <li><a href="">Creating a Customized Windows 11 zero touch iso (No Bloatware)</a></li>
         <li>Option 2</li>
         <li>Option 3</li>
-    </ul>
+    </ol>
 </details>
 
 <details class="MacOS">
