@@ -1,11 +1,5 @@
-<h1>Windows , MacOS and Linux</h1>
-<OL>
-  <li>Windows setup and customization</li>
-  <li>MacOS Tips and Tricks</li>
-  <li>Linux setup and customization</li>
-</OL>
-
 <html>
+  <h1>Windows , MacOS and Linux</h1>
 <details class="Windows">
     <summary>Windows setup and customization</summary>
     <ul>
