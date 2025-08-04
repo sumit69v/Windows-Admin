@@ -3,7 +3,7 @@
 <details class="Windows">
     <summary>Windows setup and customization</summary>
     <ol>
-        <li><a href="">Creating a Customized Windows 11 zero touch iso (No Bloatware)</a></li>
+        <li><a href="https://github.com/sumit69v/Windows/blob/main/Mac/Troubleshooting%20Slow%20Browser%20Performance%20on%20macOS%20After%20System%20Update.md">Creating a Customized Windows 11 zero touch iso (No Bloatware)</a></li>
         <li>Option 2</li>
         <li>Option 3</li>
     </ol>
