@@ -5,6 +5,7 @@
   <li>Linux setup and customization</li>
 </OL>
 
+<html>
 <details class="Windows">
     <summary>Windows setup and customization</summary>
     <ul>
@@ -31,3 +32,6 @@
         <li>Option 3</li>
     </ul>
 </details>
+
+
+</html>
