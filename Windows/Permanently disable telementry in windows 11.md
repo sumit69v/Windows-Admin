@@ -1,4 +1,4 @@
-## ##🛡️ How to Permanently Disable Telemetry in Windows 11
+##🛡️ How to Permanently Disable Telemetry in Windows 11
 
 Telemetry in Windows 11 collects diagnostic and usage data to help Microsoft improve system performance and security. However, many users prefer to limit or disable this data collection for privacy reasons. This guide outlines five effective methods to reduce or disable telemetry.
 
