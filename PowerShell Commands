@@ -1,0 +1,28 @@
+PowerShell Commands for Installing / Uninstalling application
+
+Steps to Uninstall Feedback Hub
+Open PowerShell as Administrator:
+Press Win + X → Windows PowerShell (Admin).
+
+Get-AppxPackage -AllUsers | Select-Object Name, PackageFullName
+
+Remove for Current User:
+
+# Remove Feedback Hub for the current user
+Get-AppxPackage *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
+
+This command will uninstall it only from your current user account.
+Remove for All Users (requires admin privileges):
+
+# Remove Feedback Hub for all users
+Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
+Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -eq "Microsoft.WindowsFeedbackHub"} | Remove-AppxProvisionedPackage -Online
+
+Explanation:
+Get-AppxPackage -AllUsers lists all installed apps for all users.
+Remove-AppxPackage uninstalls the app immediately.
+Get-AppxProvisionedPackage -Online and Remove-AppxProvisionedPackage prevent the app from being reinstalled for new users or after major Windows updates.
+
+Verify Removal:
+Get-AppxPackage *Microsoft.WindowsFeedbackHub*
+If nothing returns, the app is successfully removed.
