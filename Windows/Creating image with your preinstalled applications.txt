@@ -1,0 +1,44 @@
+# Download windows 11 image from microsoft store
+
+# Install Hyper-v virtualization
+
+# Create virtual machine of windows 11
+
+# Install Windows 11
+
+# Download application from ninite platform
+
+# Install all application with acrobat reader
+
+# Run sysprep with Audit mode - which let you run the windows in Adminstrator mode
+
+# After restart and login to the Audit mode 
+- Delete all user account if you want to install windows with new user in OOBE otherwise leave it as it is. 
+- Customize windows and personalization
+- Remove system application via powerpoint
+- Get-AppxPackage -AllUser | Select-Object Name, PackageFullName
+- Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub | Remove-AppxPackage
+- Remove all unwanted applications
+
+# Create one partition for copy image file from disk management.
+
+# Rerun sysprep, General and OOBE and shutdown
+
+# Boot with different PXE boot device, either creating PXE bootable USB or any windows iso image
+
+# run command in X:\sources>
+- dism /CaptureImage /ImageFile:"D:\install.wim" /CaptureDir:C:\ /Name:"WindowsImage"
+Wait to complete
+Exit the cmd reboot to hard drive. pass all the requirement.
+
+
+# If you need to make unattended iso image
+- Install NTLite
+- customize image 
+- create user account
+- Disable Windows data encryption bit locker from Device security
+- Save iso file and Test
+
+Done
+
+
