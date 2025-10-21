@@ -17,7 +17,7 @@
 - Customize windows and personalization
 - Remove system application via powerpoint
 - Get-AppxPackage -AllUser | Select-Object Name, PackageFullName
-- Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub | Remove-AppxPackage
+- Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
 - Remove all unwanted applications
 
 # Create one partition for copy image file from disk management.
@@ -40,5 +40,6 @@ Exit the cmd reboot to hard drive. pass all the requirement.
 - Save iso file and Test
 
 Done
+
 
 
