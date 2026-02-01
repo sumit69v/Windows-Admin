@@ -1,0 +1,62 @@
+##Creating batch files
+- Open notepad
+- save file in .bat format
+- right click to more properties > send to Desktop as shortcut > shortcut properties > advance > check run as administrator
+- so file required administrator previlidge
+
+###Empty recycle bin
+@echo off
+echo Emptying Recycle Bin for all drives...
+powershell -Command "Clear-RecycleBin -Force -ErrorAction Ignore"
+echo Recycle Bin emptied.
+pause
+
+##Clearing Temporary files
+@echo off
+echo Clearing Temporary Files...
+del /q /f /s %temp%\*
+rd /s /q %temp%
+echo Temporary files cleared.
+pause
+
+##Lunching multiple apps at once
+@echo off
+echo Launching apps...
+start explorer
+start chrome
+start "" AppPath
+echo All apps launched.
+pause
+
+##Backup files and folders
+@echo off
+echo Backing up files...
+xcopy "SourcePath" "DestinationPath" /e /i /h /y
+echo Backup completed.
+pause
+
+##Reset network
+@echo off
+echo Resetting network...
+ipconfig /release
+ipconfig /renew
+ipconfig /flushdns
+echo Network reset completed.
+pause
+
+##Create System restore point
+@echo off
+echo Creating System Restore Point...
+wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "RestorePointName", 100, 7
+echo System Restore Point created.
+pause
+
+
+##Switch dark and light mode
+@echo off
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v AppsUseLightTheme /t REG_DWORD /d 0 /f
+echo Switched to Dark Mode.
+pause
+
+
+
